@@ -4,10 +4,10 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 28px;
+    gap: 12px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
     main {
         gap: 4px;
     }
