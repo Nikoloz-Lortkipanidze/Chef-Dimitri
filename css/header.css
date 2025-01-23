@@ -8,6 +8,8 @@ header {
 
     position: fixed;
     width: 100vw;
+
+    z-index: 3;
 }
 
 .mainPage {
@@ -140,13 +142,13 @@ header .navigation .openSidebarBTN {
         display: block;
     }
     100% {
-        width: 500px;
+        width: 400px;
     }
 }
 
 @keyframes sidebarClosing {
     0% {
-        width: 500px;
+        width: 400px;
     }
     100% {
         width: 0;
