@@ -2,9 +2,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    padding: 40px; /* Distance from wall */
 }
 
 .aboutMe_Short img {
-    max-width: 350px;
-    width: 100%;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.aboutMe_Short p {
+    width: 400px;
+    font-size: 16.5px;
+
+    font-family: "Noto Sans Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width: 896px) {
+    .aboutMe_Short {
+        flex-direction: column;
+    }
+    
+    .aboutMe_Short img {
+        width: 100%;
+        height: auto;
+    }
+
+    .aboutMe_Short p {
+        width: 100%;
+    }
 }
