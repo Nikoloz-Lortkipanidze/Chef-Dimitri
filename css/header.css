@@ -1,0 +1,151 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px;
+    background-color: white;
+
+    position: fixed;
+    width: 100vw;
+}
+
+.pageNavigator {
+    color: rgb(51, 51, 51);
+
+    font-family: "Noto Serif Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.mainPage {
+    color: black;   
+    
+    font-family: "Noto Serif Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header .logo img{
+    height: 40px;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header .navigation .pages {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: rgb(68, 68, 68);
+
+    font-family: "Noto Serif Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+header .navigation .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-right: 10px;
+}
+
+header .navigation .socials img {
+    height: 25px;
+}
+
+/* .pageControl {
+    color: black;
+} */
+
+header .navigation .openSidebarBTN {
+    height: 36px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header .navigation h3,
+    header .navigation img {
+        display: none;
+    }
+
+    header .navigation .openSidebarBTN {
+        display: block;
+    }
+
+}
+
+/* Sidebar Navigation */
+.sidebarNavigation {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    background-color: lightgrey;
+
+
+    overflow-x: hidden;
+    /* animation: sidebarOpening 200ms 1 forwards; */
+}
+
+.sidebarNavigation .pages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.sidebarNavigation .pages h3 {
+    font-size: 20px;
+}
+
+.sidebarNavigation .pages h3 {
+    transition: 1s;
+}
+.sidebarNavigation .pages h3:hover {
+    text-decoration-line: line-through;
+}
+
+.closeSidebarBTN {
+    width: 24px;
+    cursor: pointer;
+}
+
+@keyframes sidebarOpening {
+    0% {
+        width: 0;
+        display: block;
+    }
+    100% {
+        width: 500px;
+    }
+}
+
+@keyframes sidebarClosing {
+    0% {
+        width: 550px;
+    }
+    100% {
+        width: 0;
+        display: none;
+    }
+}
