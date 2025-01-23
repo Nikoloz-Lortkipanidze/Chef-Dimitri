@@ -94,6 +94,9 @@ header .navigation .openSidebarBTN {
         display: block;
     }
 
+    header .navigation .socials {
+        margin-right: 0;
+    }
 }
 
 /* Sidebar Navigation */

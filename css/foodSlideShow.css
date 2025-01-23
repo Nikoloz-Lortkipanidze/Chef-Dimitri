@@ -1,0 +1,64 @@
+.foodSlideShow img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.foodSlideShow div {
+    position: relative;
+}
+
+.foodSlideShow .foodSlideShowNav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.foodSlideShowNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.foodSlideShowNav h2 {
+    width: 400px;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 0 16px black;
+
+    font-family: "Noto Sans Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+
+.foodSlideShowNav button {
+    border: none;
+    background-color: lightgray;
+    color: rgb(25, 25, 25);
+
+    cursor: pointer;
+
+    font-size: 28px;
+    padding: 2px 20px;
+
+    font-family: "Noto Sans Georgian", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+
+    transition: 200ms;
+}
+
+.foodSlideShowNav button:hover {
+    background-color: rgba(211, 211, 211, 0.75);
+    color: black;
+}
