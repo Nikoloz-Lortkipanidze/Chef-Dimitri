@@ -1,0 +1,12 @@
+.aboutMe_Short {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+}
+
+.aboutMe_Short img {
+    max-width: 350px;
+    width: 100%;
+}
